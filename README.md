@@ -29,6 +29,7 @@ I shared Korean versions for each reference to study methodology and English. Pl
 - [ ] LIME example notebook
 
 ## SHapley Additive exPlanations (SHAP) [4]
+- [x] Shapley value란? ([Link](https://www.notion.so/tootouch/Shapley-Value-ba1bc061e6d749c8b9efa0116242dbd8))
 - [ ] SHAP에 대한 설명
 - [ ] SHAP example notebook
 
