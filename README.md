@@ -1,8 +1,13 @@
 # WhiteBox-Part2
 The White Box Project is a project that introduces many ways to solve the part of the black box of machine learning. In this part, i've introduced and experimented with ways to interpret and evaluate models in the field of **tabular data**.
 
-I shared Korean versions for each reference to study methodology and English. Please refer to the reference.  
-참고자료별로 영어공부겸 한국어로 번역한 자료가 있습니다.
+# Requirements
+```
+numpy == 1.17.3
+scikit-learn == 0.21.2
+xgboost == 0.90
+tensorflow == 1.14.0
+```
 
 # Dataset
 1. Titanic: Machine Learning from Disaster [1] (Classification)
@@ -12,11 +17,12 @@ I shared Korean versions for each reference to study methodology and English. Pl
 5. Youtube Spam [5] (Classification & NLP)
 
 # Model 
-1. Linear Regression
-2. Decision Tree
-3. Random Forest
-4. XGboost
-5. Deep Neural Network (Pytorch)
+The parameters used to learn the model can be found [here]()
+1. Linear Regression or Logistic Regression (LR)
+2. Decision Tree (DT)
+3. Random Forest (RF)
+4. XGboost (XGB)
+5. Deep Neural Network (DNN) 
 
 # Method 
 ## SHapley Additive exPlanations (SHAP) [5]
@@ -27,10 +33,28 @@ I shared Korean versions for each reference to study methodology and English. Pl
   
 - **Practice**
   
+# How-to
+## Model Training
+```python
+> python main.py --model=['LR','DT','RF','XGB','DNN'] \
+                 --dataset=['titanic','house_price','bike_sharing','cervical_cancer','youtube_spam'] \
+                 --file_path=dataset_directory \
+                 --save_path=save_directory \
+                 --params_path=parameter_directory
+```
+
+## Load Model
+```python
+# LR, DT, RF, XGB
+import pickle
+model = pickle.load(open(saved_model_path, 'rb'))
+
+# DNN
+import tensorflow as tf
+model = tf.keras.models.load_model(saved_model_path)
+```
+
 # Results
-
-
-# Conclusion
 
 
 # Reference
