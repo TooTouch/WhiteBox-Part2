@@ -35,7 +35,7 @@ The parameters used to learn the model can be found [here]()
   
 # How-to
 ## Model Training
-```python
+```
 > python main.py --model=['LR','DT','RF','XGB','DNN'] \
                  --dataset=['titanic','house_price','bike_sharing','cervical_cancer','youtube_spam'] \
                  --file_path=dataset_directory \
