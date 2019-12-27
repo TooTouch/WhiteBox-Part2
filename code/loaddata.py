@@ -1,18 +1,23 @@
 import pandas as pd 
 import numpy as np 
+import os
+
 from sklearn.preprocessing import StandardScaler
 
-class TitanicPreprocess:
-    def __init__(self):
+class TitanicData:
+    def __init__(self, file_path):
+        self.data = pd.read_csv(os.path.join(file_path,'train.csv'))
+        self.testset = pd.read_csv(os.path.join(file_path,'test.csv'))
+
         self.scaler = StandardScaler()
         self.num_features = ['Pclass','Age','SibSp','Parch','Fare']
 
-    def transform(self, raw_data, test=None, **kwargs):
+    def transform(self, **kwargs):
         # args
         scaling = False if 'scaling' not in kwargs.keys() else kwargs['scaling']
 
         # pre-processing
-        train = self.processing(raw_data, **kwargs)
+        train = self.processing(self.data, **kwargs)
         x_train = train.drop('Survived', axis=1)
         y_train = train.Survived
         # scaling
@@ -20,8 +25,8 @@ class TitanicPreprocess:
             x_train[self.num_features] = self.scaler.fit_transform(x_train[self.num_features])
 
         # test set
-        if isinstance(test, pd.DataFrame):
-            x_test = self.processing(test, **kwargs)
+        if isinstance(self.testset, pd.DataFrame):
+            x_test = self.processing(self.testset, **kwargs)
             # scaling
             if scaling:
                 x_test[self.num_features] = self.scaler.transform(x_test[self.num_features])
@@ -30,7 +35,6 @@ class TitanicPreprocess:
 
         return x_train.values, y_train.values
         
-
     def processing(self, raw_data, **kwargs):
         data = raw_data.copy()
         # args

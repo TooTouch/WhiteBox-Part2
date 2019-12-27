@@ -1,0 +1,20 @@
+{
+    "params":{
+        "C": 1.0,
+        "class_weight": null,
+        "dual": false,
+        "fit_intercept": true,
+        "intercept_scaling": 1,
+        "l1_ratio": null,
+        "max_iter": 100,
+        "multi_class": "warn",
+        "n_jobs": null,
+        "penalty": "l2",
+        "random_state": 223,
+        "solver": "warn",
+        "tol": 0.0001,
+        "verbose": 0,
+        "warm_start": false
+    },
+    "scaling": true
+}

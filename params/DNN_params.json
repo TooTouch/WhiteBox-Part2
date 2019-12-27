@@ -1,0 +1,10 @@
+{
+    "params":{
+        "nb_class": 1,
+        "nb_layers": [128], 
+        "optimizer": "sgd"
+    },
+    "epochs": 20, 
+    "batch_size": 32, 
+    "scaling": true
+}
