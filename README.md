@@ -17,7 +17,7 @@ tensorflow == 1.14.0
 5. Youtube Spam [5] (Classification & NLP)
 
 # Model 
-The parameters used to learn the model can be found [here]()
+The parameters used to learn the model can be found [here](https://github.com/bllfpc/WhiteBox-Part2/tree/master/params)
 1. Linear Regression or Logistic Regression (LR)
 2. Decision Tree (DT)
 3. Random Forest (RF)
