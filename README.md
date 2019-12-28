@@ -60,12 +60,12 @@ model = tf.keras.models.load_model(saved_model_path)
 # Reference
 [1] Kaggle Competiton : [Titanic: Machine Learning from Disaster](https://www.kaggle.com/c/titanic)
 
-[2] Kelwin Fernandes, Jaime S. Cardoso, and Jessica Fernandes. 'Transfer Learning with Partial Observability Applied to Cervical Cancer Screening.' Iberian Conference on Pattern Recognition and Image Analysis. Springer International Publishing, 2017.
+[2] Kelwin Fernandes, Jaime S. Cardoso, and Jessica Fernandes. 'Transfer Learning with Partial Observability Applied to Cervical Cancer Screening.' Iberian Conference on Pattern Recognition and Image Analysis. Springer International Publishing, 2017. [Link](https://archive.ics.uci.edu/ml/datasets/Cervical+cancer+%28Risk+Factors%29)
 
 [3] Kaggle Competition : [House Prices: Advanced Regression Techniques](https://www.kaggle.com/c/house-prices-advanced-regression-techniques/overview/description)
 
-[4] Fanaee-T, Hadi, and Gama, Joao, "Event labeling combining ensemble detectors and background knowledge", Progress in Artificial Intelligence (2013): pp. 1-15, Springer Berlin Heidelberg, doi:10.1007/s13748-013-0040-3.
+[4] Fanaee-T, Hadi, and Gama, Joao, "Event labeling combining ensemble detectors and background knowledge", Progress in Artificial Intelligence (2013): pp. 1-15, Springer Berlin Heidelberg, doi:10.1007/s13748-013-0040-3. [Link](http://archive.ics.uci.edu/ml/datasets/Bike+Sharing+Dataset)
 
-[5] Alberto, T.C., Lochter J.V., Almeida, T.A. TubeSpam: Comment Spam Filtering on YouTube. Proceedings of the 14th IEEE International Conference on Machine Learning and Applications (ICMLA'15), 1-6, Miami, FL, USA, December, 2015.
+[5] Alberto, T.C., Lochter J.V., Almeida, T.A. TubeSpam: Comment Spam Filtering on YouTube. Proceedings of the 14th IEEE International Conference on Machine Learning and Applications (ICMLA'15), 1-6, Miami, FL, USA, December, 2015. [Link](http://www.dt.fee.unicamp.br/~tiago//youtubespamcollection/)
 
 [6] Lundberg, Scott M., and Su-In Lee. “[A unified approach to interpreting model predictions.](https://arxiv.org/pdf/1705.07874.pdf)” Advances in Neural Information Processing Systems. 2017. ([Korean Version](https://www.notion.so/tootouch/A-Unified-Approach-to-Interpreting-Model-Predictions-96de8a9e08b149c48cdd802cd62ad59f))
