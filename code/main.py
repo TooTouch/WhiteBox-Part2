@@ -5,10 +5,20 @@ import os
 import argparse
 
 
-def titanic_train(file_path, model_type, savedir, **kwargs):
+def model_train(file_path, dataset, model_type, savedir, **kwargs):
     # load data
-    titanic = TitanicData(file_path)
-    (x_train, y_train), _ = titanic.transform(scaling=kwargs.pop('scaling'))
+    # TODO: 아래 나머지 채울것
+    if dataset=='titanic':
+        titanic = TitanicData(file_path)
+        (x_train, y_train), _ = titanic.transform(scaling=kwargs.pop('scaling'))
+    elif dataset=='house_price':
+        pass
+    elif dataset=='bike_sharing':
+        pass
+    elif dataset=='cervical_canver':
+        pass
+    elif dataset=='youtube_spam':
+        pass
     print('Complete Data Pre-processing')
 
     # add argument
@@ -20,6 +30,8 @@ def titanic_train(file_path, model_type, savedir, **kwargs):
     clf.train(x_train, y_train, savedir, **kwargs)
     print('Complete Training Model')
     print('Complete Saving Model')
+
+
     
 if __name__ == '__main__':
     # arguments
@@ -43,16 +55,6 @@ if __name__ == '__main__':
     
 
     # model training by dataset
-    # TODO: 아래 나머지 채울것
-    if args.dataset == 'titanic':
-        titanic_train(file_path, args.model, save_path, **params)
-    elif args.dataset == 'house_pricing':
-        pass
-    elif args.dataset == 'bike_sharing':
-        pass
-    elif args.dataset == 'cervical_cancer':
-        pass
-    elif args.dataset == 'youtube':
-        pass
+    model_train(file_path, args.dataset, args.model, save_path, **params)
     
         
