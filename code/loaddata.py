@@ -2,7 +2,12 @@ import pandas as pd
 import numpy as np 
 import os
 
-from sklearn.preprocessing import StandardScaler
+from scipy.stats import skew
+from sklearn.preprocessing import StandardScaler, OneHotEncoder
+from sklearn.impute import SimpleImputer
+
+import warnings
+warnings.filterwarnings('ignore')
 
 class TitanicData:
     def __init__(self, file_path):
@@ -80,4 +85,94 @@ class TitanicData:
 
 
     
+class HousePriceData:
+    def __init__(self, file_path):
+        self.data = pd.read_csv(os.path.join(file_path,'train.csv'))
+        self.testset = pd.read_csv(os.path.join(file_path,'test.csv'))
+
+        self.scaler = StandardScaler()
+        self.imputer = SimpleImputer()
+        self.encoder = OneHotEncoder()
+        self.num_features = None
+        self.missing_features = None
+        self.skew_features = None
+        self.remove_features = []
         
+    def transform(self, **kwargs):
+        # args
+        scaling = False if 'scaling' not in kwargs.keys() else kwargs['scaling']
+
+        # pre-processing
+        train = self.processing(self.data, **kwargs)
+        x_train = train.drop('SalePrice', axis=1)
+        y_train = train.SalePrice
+        
+        # test set
+        x_test = self.processing(self.testset, training=False, **kwargs)
+
+        # dummy transform
+        data = pd.concat([x_train, x_test],axis=0)
+        data = pd.get_dummies(data, drop_first=False)
+
+        # split train and test
+        x_train = data.iloc[:x_train.shape[0]]
+        x_test = data.iloc[x_train.shape[0]:]
+
+        # imputation
+        x_train.iloc[:,:] = self.imputer.fit_transform(x_train)
+        x_test.iloc[:,:] = self.imputer.transform(x_test)
+
+        # scaling
+        if scaling:
+            x_train[self.num_features] = self.scaler.fit_transform(x_train[self.num_features])
+            x_test[self.num_features] = self.scaler.transform(x_test[self.num_features])
+
+        return (x_train.values, y_train.values), x_test.values
+        
+    def processing(self, raw_data, **kwargs):
+        training = True if 'training' not in kwargs.keys() else False
+
+        data = raw_data.copy()
+
+        # Remove ID columns
+        data = data.drop('Id',axis=1)
+        
+        if training:
+            # Remove features
+            # filtering features over 10% missing values
+            missing_lst = data.isnull().mean().reset_index(name='pct')
+            missing_features_over10 = missing_lst[missing_lst['pct'] >= 0.10]['index'].tolist()
+            self.remove_features.extend(missing_features_over10)
+            # filtering features over 10 unique values
+            unique_lst = data.describe(include='all').loc['unique'].reset_index(name='cnt')
+            unique_features = unique_lst[unique_lst.cnt >=10]['index'].tolist()
+            self.remove_features.extend(unique_features)
+            
+            # Log 1+ Transform features over 0.75 skewness
+            num_features = data.dtypes[data.dtypes!='object'].index
+            skew_lst = data[num_features].apply(lambda x: skew(x.dropna())).reset_index(name='skew_value')
+            self.skew_features = skew_lst[skew_lst.skew_value > 0.75]['index'].tolist()
+            self.num_features = num_features.tolist()
+
+            # remove target from skew features
+            if 'SalePrice' in self.skew_features:
+                self.skew_features.remove('SalePrice')
+                self.num_features.remove('SalePrice')
+
+            # remove deleted features from num features
+            del_features = set(self.remove_features) & set(self.num_features)
+            for f in del_features:
+                self.num_features.remove(f)
+            # remove deleted features from skew features
+            del_features = set(self.remove_features) & set(self.skew_features)
+            for f in del_features:
+                self.skew_features.remove(f)
+                
+        # remove
+        data = data.drop(self.remove_features, axis=1)
+
+        # log transform
+        data[self.skew_features] = np.log1p(data[self.skew_features])
+
+        return data
+

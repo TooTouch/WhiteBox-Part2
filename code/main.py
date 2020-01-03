@@ -1,9 +1,8 @@
-from loaddata import TitanicData
+from loaddata import TitanicData, HousePriceData
 from models import Classifier, Regressor
 import json
 import os 
 import argparse
-
 
 def model_train(file_path, dataset, model_type, savedir, **kwargs):
     # load data
@@ -12,7 +11,8 @@ def model_train(file_path, dataset, model_type, savedir, **kwargs):
         titanic = TitanicData(file_path)
         (x_train, y_train), _ = titanic.transform(scaling=kwargs.pop('scaling'))
     elif dataset=='house_price':
-        pass
+        house_price = HousePriceData(file_path)
+        (x_train, y_train), _ = house_price.transform(scaling=kwargs.pop('scaling'))
     elif dataset=='bike_sharing':
         pass
     elif dataset=='cervical_canver':
