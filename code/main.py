@@ -1,4 +1,4 @@
-from loaddata import TitanicData, HousePriceData
+from loaddata import TitanicData, HousePriceData, CervicalCancerData
 from models import Classifier, Regressor
 import json
 import os 
@@ -15,8 +15,9 @@ def model_train(file_path, dataset, model_type, savedir, **kwargs):
         (x_train, y_train), _ = house_price.transform(scaling=kwargs.pop('scaling'))
     elif dataset=='bike_sharing':
         pass
-    elif dataset=='cervical_canver':
-        pass
+    elif dataset=='cervical_cancer':
+        cervical_cancer = CervicalCancerData(file_path)
+        x_train, y_train = cervical_cancer.transform(scaling=kwargs.pop('scaling'))
     elif dataset=='youtube_spam':
         pass
     print('Complete Data Pre-processing')

@@ -176,3 +176,58 @@ class HousePriceData:
 
         return data
 
+
+
+class CervicalCancerData:
+    def __init__(self, file_path, **kwargs):
+        target = 'Biopsy' if 'target' not in kwargs.keys() else kwargs['target']
+        self.data = pd.read_csv(os.path.join(file_path,'risk_factors_cervical_cancer.csv'))
+
+        self.scaler = StandardScaler()
+
+        self.num_features = ['Age','Number of sexual partners',
+                             'Num of pregnancies','Hormonal Contraceptives (years)','IUD (years)',
+                             'STDs (number)','STDs: Number of diagnosis']
+        self.bin_features = ['Smokes','Smokes (years)','Smokes (packs/year)',
+                             'Hormonal Contraceptives','IUD','STDs',
+                             'STDs:condylomatosis','STDs:cervical condylomatosis',
+                             'STDs:vaginal condylomatosis','STDs:vulvo-perineal condylomatosis',
+                             'STDs:syphilis','STDs:pelvic inflammatory disease','STDs:genital herpes',
+                             'STDs:molluscum contagiosum','STDs:AIDS','STDs:HIV','STDs:Hepatitis B',
+                             'STDs:HPV','Dx:Cancer','Dx:CIN','Dx:HPV','Dx']
+        self.targets = ['Hinselmann','Schiller','Citology','Biopsy']
+        self.target = target
+
+    def transform(self, **kwargs):
+        # args
+        scaling = False if 'scaling' not in kwargs.keys() else kwargs.pop('scaling')
+
+        # pre-processing
+        data = self.processing(self.data, **kwargs)
+        x_data = data.drop(self.targets, axis=1)
+        y_data = data[self.target]
+
+        # scaling
+        if scaling:
+            x_data[self.num_features] = self.scaler.fit_transform(x_data[self.num_features])
+
+        return x_data.values, y_data.values
+    
+    def processing(self, raw_data, **kwargs):
+        
+        data = raw_data.copy() 
+
+        # replace '?' values to None
+        col_features = data.dtypes[data.dtypes=='object'].index.tolist()
+        for c in col_features:
+            data[c] = data[c].apply(lambda x: None if x=='?' else x).astype(np.float32)
+
+        # filtering features over 15% missing values 
+        missing_pct = data.isnull().mean()
+        missing_pct_over15 = missing_pct[missing_pct > 0.15].index.tolist()
+        data = data.drop(missing_pct_over15, axis=1)
+        
+        # drop missing values
+        data = data.dropna()
+
+        return data
