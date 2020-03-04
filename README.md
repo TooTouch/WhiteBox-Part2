@@ -1,4 +1,7 @@
 # WhiteBox-Part2
+
+![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FTooTouch%2FWhiteBox-Part2)
+
 The White Box Project is a project that introduces many ways to solve the part of the black box of machine learning. This project is based on [Interpretable Machine Learning](https://christophm.github.io/interpretable-ml-book/) by Christoph Molnar [1]. I recommend you to read the book first and practice this project. If you are R user, you can see R code used in examples [here](https://github.com/christophM/interpretable-ml-book). 
 
 한글로 변역된 내용은 [여기](https://tootouch.github.io/IML/start/)서 확인하실 수 있습니다. 변역은 저자와 협의 후 진행되었음을 알립니다.
