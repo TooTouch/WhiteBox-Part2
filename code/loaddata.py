@@ -72,7 +72,7 @@ class TitanicData:
         data.loc[data.Fare.isnull(), 'Fare'] = data.Fare.median()
         data['Fare'] = np.log1p(data.Fare)
 
-        # Tickek과 Cabin은 사용안함
+        # Ticket과 Cabin은 사용안함
         data = data.drop(['Ticket','Cabin'], axis=1)
 
         # PassengerId 제외
@@ -229,5 +229,39 @@ class CervicalCancerData:
         
         # drop missing values
         data = data.dropna()
+
+        return data
+
+
+class BikeData:
+    def __init__(self, file_path):
+        self.data = pd.read_csv(os.path.join(file_path,'day.csv'))
+
+        self.cat_features = ['mnth','weekday','weathersit']
+
+    def transform(self, **kwargs):
+        # pre-processing
+        train = self.processing(self.data, **kwargs)
+
+        x_train = train.drop('cnt',axis=1)
+        y_train = train.cnt 
+
+        return x_train.values, y_train.values
+        
+    def processing(self, raw_data, **kwargs):
+        # args
+        dummy_dropfirst = True if 'dummy_dropfirst' not in kwargs.keys() else kwargs['dummy_dropfirst']
+
+        data = raw_data.copy()
+        
+        # make a day_trend feature from a instance feature
+        data = data.rename(columns={'instant':'day_trend'})
+
+        # discard unused features
+        data = data.drop(['dteday','season','atemp','casual','registered'], axis=1)
+
+        # dummy transform
+        data[self.cat_features] = data[self.cat_features].astype(str)
+        data = pd.get_dummies(data, drop_first=dummy_dropfirst)
 
         return data
