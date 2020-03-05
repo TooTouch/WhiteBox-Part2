@@ -68,7 +68,7 @@ The parameters used to learn the model can be found [here](https://github.com/bl
 
 [4] Kaggle Competition : [House Prices: Advanced Regression Techniques](https://www.kaggle.com/c/house-prices-advanced-regression-techniques/overview/description)
 
-[5] Fanaee-T, Hadi, and Gama, Joao, "Event labeling combining ensemble detectors and background knowledge", Progress in Artificial Intelligence (2013): pp. 1-15, Springer Berlin Heidelberg, doi:10.1007/s13748-013-0040-3. [[Link]](http://archive.ics.uci.edu/ml/datasets/Bike+Sharing+Dataset)
+[5] Fanaee-T, Hadi, and Gama, Joao, "Event labeling combining ensemble detectors and background knowledge", Progress in Artificial Intelligence (2013): pp. 1-15, Springer Berlin Heidelberg. [[Link]](http://archive.ics.uci.edu/ml/datasets/Bike+Sharing+Dataset)
 
 [6] Alberto, T.C., Lochter J.V., Almeida, T.A. TubeSpam: Comment Spam Filtering on YouTube. Proceedings of the 14th IEEE International Conference on Machine Learning and Applications (ICMLA'15), 1-6, Miami, FL, USA, December, 2015. [[Link]](http://www.dt.fee.unicamp.br/~tiago//youtubespamcollection/)
 
