@@ -111,10 +111,10 @@ It is currently maintained by a team of volunteers.
 
 Scikit-learn is available in through conda provided by Anaconda.
 
-- Documentation : https://scikit-learn.org/stable/  
-- Github Repository : https://github.com/scikit-learn/scikit-learn
+- **Documentation** : https://scikit-learn.org/stable/  
+- **Github Repository** : https://github.com/scikit-learn/scikit-learn
 
-Installation :
+**Installation** 
 
 ```bash
 # Pip
@@ -133,10 +133,10 @@ statsmodels is a Python module that provides classes and functions for the estim
 
 Statsmodels is available in through conda provided by Anaconda.
 
-- Documentation : https://www.statsmodels.org/stable/index.html  
-- Github Repository : https://github.com/statsmodels/statsmodels
+- **Documentation** : https://www.statsmodels.org/stable/index.html  
+- **Github Repository** : https://github.com/statsmodels/statsmodels
 
-Installation : 
+**Installation**  
 
 ```bash
 # Pip
@@ -153,10 +153,10 @@ import statsmodels
 
 pyGAM is a package for building Generalized Additive Models in Python, with an emphasis on modularity and performance. The API will be immediately familiar to anyone with experience of scikit-learn or scipy.
 
-Documentation : https://pygam.readthedocs.io/en/latest/notebooks/quick_start.html  
-Github Repository : https://github.com/dswah/pyGAM
+- **Documentation** : https://pygam.readthedocs.io/en/latest/notebooks/quick_start.html  
+- **Github Repository** : https://github.com/dswah/pyGAM
 
-Installation : 
+**Installation**  
 
 ```bash
 # Pip
@@ -173,10 +173,10 @@ import pygam
 
 Skater is a open source unified framework to enable Model Interpretation for all forms of model to help one build an Interpretable machine learning system often needed for real world use-cases. Skater supports algorithms to demystify the learned structures of a black box model both globally(inference on the basis of a complete data set) and locally(inference about an individual prediction).
 
-Documentation : https://oracle.github.io/Skater/index.html  
-Github Repository : https://github.com/oracle/Skater
+- **Documentation** : https://oracle.github.io/Skater/index.html  
+- **Github Repository** : https://github.com/oracle/Skater
 
-Installation :
+**Installation** 
 
 ```bash
 # Option 1: without rule lists and without deepinterpreter
@@ -208,10 +208,10 @@ python partial dependence plot toolbox
 
 This repository is inspired by ICEbox. The goal is to visualize the impact of certain features towards model prediction for any supervised learning algorithm using partial dependence plots [R1](https://pdpbox.readthedocs.io/en/latest/papers.html#r1) [R2](https://pdpbox.readthedocs.io/en/latest/papers.html#r2). PDPbox now supports all scikit-learn algorithms.
 
-Documentation : https://pdpbox.readthedocs.io/en/latest/index.html#
-Github Repository : https://github.com/SauceCat/PDPbox
+- **Documentation** : https://pdpbox.readthedocs.io/en/latest/index.html#
+- **Github Repository** : https://github.com/SauceCat/PDPbox
 
-Installation : 
+**Installation**  
 
 ```bash
 # Pip
@@ -227,10 +227,10 @@ import pdpbox
 
 This project is about explaining what machine learning classifiers (or models) are doing. At the moment, we support explaining individual predictions for text classifiers or classifiers that act on tables (numpy arrays of numerical or categorical data) or images, with a package called lime (short for local interpretable model-agnostic explanations). Lime is based on the work presented in [this paper](https://arxiv.org/abs/1602.04938) ([bibtex here for citation](https://github.com/marcotcr/lime/blob/master/citation.bib)).
 
-Documentation : https://lime-ml.readthedocs.io/en/latest/index.html
-Github Repository : https://github.com/marcotcr/lime
+- **Documentation** : https://lime-ml.readthedocs.io/en/latest/index.html
+- **Github Repository** : https://github.com/marcotcr/lime
 
-Installation : 
+**Installation**  
 
 ```bash
 # Pip
@@ -246,10 +246,10 @@ import lime
 
 A Python implementation of individual conditional expecation plots inspired by R's [ICEbox](https://cran.r-project.org/web/packages/ICEbox/index.html). Individual conditional expectation plots were introduced in Peeking Inside the Black Box: Visualizing Statistical Learning with Plots of Individual Conditional Expectation ([arXiv:1309.6392](https://arxiv.org/abs/1309.6392)).
 
-Documentation : http://austinrochford.github.io/PyCEbox/docs/
-Github Repository : https://github.com/AustinRochford/PyCEbox
+- **Documentation** : http://austinrochford.github.io/PyCEbox/docs/
+- **Github Repository** : https://github.com/AustinRochford/PyCEbox
 
-Installation :
+**Installation** 
 
 ```bash
 # Pip 
@@ -264,9 +264,9 @@ import pycebox
 
 Implementation of a rule based prediction algorithm based on [the rulefit algorithm from Friedman and Popescu (PDF)(http://statweb.stanford.edu/~jhf/ftp/RuleFit.pdf)]
 
-Github Repository : https://github.com/christophM/rulefit
+- **Github Repository** : https://github.com/christophM/rulefit
 
-Installation :
+**Installation** 
 
 ```bash
 # Pip
@@ -285,10 +285,10 @@ Skope-rules aims at learning logical, interpretable rules for "scoping" a target
 
 Skope-rules is a trade off between the interpretability of a Decision Tree and the modelization power of a Random Forest.
 
-Documentation : https://skope-rules.readthedocs.io/en/latest/index.html
-Github Repository : https://github.com/scikit-learn-contrib/skope-rules
+- **Documentation** : https://skope-rules.readthedocs.io/en/latest/index.html
+- **Github Repository** : https://github.com/scikit-learn-contrib/skope-rules
 
-Installation : 
+**Installation**  
 
 ```bash
 # Pip
@@ -304,10 +304,10 @@ import skrules
 Alibi is an open source Python library aimed at machine learning model inspection and interpretation. The initial focus on the library is on black-box, instance based model explanations.
 
 
-Documentation : https://docs.seldon.io/projects/alibi/en/latest/#
-Github Repository : https://github.com/SeldonIO/alibi
+- **Documentation** : https://docs.seldon.io/projects/alibi/en/latest/#
+- **Github Repository** : https://github.com/SeldonIO/alibi
 
-Installation :
+**Installation** 
 
 ```bash
 # Pip 
@@ -330,7 +330,7 @@ We have a reproducible, executable, and Dockerized version of these scripts on [
 
 The datasets for the experiments can also be found at the Codalab link.
 
-Github Repository : https://github.com/kohpangwei/influence-release
+- **Github Repository** : https://github.com/kohpangwei/influence-release
 
 
 ### shap
@@ -338,10 +338,10 @@ Github Repository : https://github.com/kohpangwei/influence-release
 SHAP (SHapley Additive exPlanations) is a game theoretic approach to explain the output of any machine learning model. It connects optimal credit allocation with local explanations using the classic Shapley values from game theory and their related extensions (see [papers](https://github.com/slundberg/shap#citations) for details and citations).
 
 
-- Documentation : https://shap.readthedocs.io/en/latest/#
-- Github Repository : https://github.com/slundberg/shap
+- **Documentation** : https://shap.readthedocs.io/en/latest/#
+- **Github Repository** : https://github.com/slundberg/shap
 
-Installation :
+**Installation** 
 
 ```bash
 # Pip
