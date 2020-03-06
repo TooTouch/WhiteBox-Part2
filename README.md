@@ -29,7 +29,7 @@ tensorflow == 1.14.0
 5. Youtube Spam (Classification & NLP) [6]
 
 # Black Box Models
-The parameters used to learn the model can be found [here](https://github.com/bllfpc/WhiteBox-Part2/tree/master/params)
+The parameters used to learn the model can be found [here](https://github.com/bllfpc/WhiteBox-Part2/tree/master/params).
 1. Random Forest (RF)
 2. XGboost (XGB)
 3. LigthGBM (LGB)
@@ -37,26 +37,26 @@ The parameters used to learn the model can be found [here](https://github.com/bl
 
 # Interpretable Methods
 
-**Model-specific methods** [[English](https://christophm.github.io/interpretable-ml-book/simple.html)|[Korean](https://tootouch.github.io/IML/interpretable_models/)]
-- Linear Regression [[English](https://christophm.github.io/interpretable-ml-book/limo.html)|[Korean](https://tootouch.github.io/IML/linear_regression/)]
-- Logistic Regression [[English](https://christophm.github.io/interpretable-ml-book/logistic.html)|[Korean](https://tootouch.github.io/IML/logistic_regression/)]
-- GLM, GAM and more [[English](https://christophm.github.io/interpretable-ml-book/extend-lm.html)|[Korean](https://tootouch.github.io/IML/glm_gam_and_more/)]
-- Decision Tree [[English](https://christophm.github.io/interpretable-ml-book/tree.html)|[Korean](https://tootouch.github.io/IML/decision_tree/)]
-- Decision Rules [[English](https://christophm.github.io/interpretable-ml-book/rules.html)|[Korean](https://tootouch.github.io/IML/decision_rules/)]
-- RuleFit [[English](https://christophm.github.io/interpretable-ml-book/rulefit.html)|[Korean](https://tootouch.github.io/IML/rulefit/)]
-- Other Interpretable Models [[English](https://christophm.github.io/interpretable-ml-book/other-interpretable.html)|[Korean](https://tootouch.github.io/IML/other_interpretable_models/)]
+**Model-specific methods** [ [English](https://christophm.github.io/interpretable-ml-book/simple.html) | [Korean](https://tootouch.github.io/IML/interpretable_models/) ]
+- Linear Regression [ [English](https://christophm.github.io/interpretable-ml-book/limo.html) | [Korean](https://tootouch.github.io/IML/linear_regression/) ]
+- Logistic Regression [ [English](https://christophm.github.io/interpretable-ml-book/logistic.html) | [Korean](https://tootouch.github.io/IML/logistic_regression/) ]
+- GLM, GAM and more [ [English](https://christophm.github.io/interpretable-ml-book/extend-lm.html) | [Korean](https://tootouch.github.io/IML/glm_gam_and_more/) ]
+- Decision Tree [ [English](https://christophm.github.io/interpretable-ml-book/tree.html) | [Korean](https://tootouch.github.io/IML/decision_tree/) ]
+- Decision Rules [ [English](https://christophm.github.io/interpretable-ml-book/rules.html) | [Korean](https://tootouch.github.io/IML/decision_rules/) ]
+- RuleFit [ [English](https://christophm.github.io/interpretable-ml-book/rulefit.html) | [Korean](https://tootouch.github.io/IML/rulefit/) ]
+- Other Interpretable Models [ [English](https://christophm.github.io/interpretable-ml-book/other-interpretable.html) | [Korean](https://tootouch.github.io/IML/other_interpretable_models/) ]
 
-**Model-agnostic methods** [[English](https://christophm.github.io/interpretable-ml-book/agnostic.html)|[Korean](https://tootouch.github.io/IML/model_agnostic_methods/)]
-- Partial Dependence Plot (PDP) [[English](https://christophm.github.io/interpretable-ml-book/pdp.html)|[Korean](https://tootouch.github.io/IML/partial_dependence_plot/)]
-- Individual Conditional Expectation (ICE) [[English](https://christophm.github.io/interpretable-ml-book/ice.html)|[Korean](https://tootouch.github.io/IML/individual_conditional_expectation/)]
-- Accumulated Local Effects (ALE) Plot [[English](https://christophm.github.io/interpretable-ml-book/ale.html)|[Korean](https://tootouch.github.io/IML/accumulated_local_effects/)] 
-- Feature Interaction [[English](https://christophm.github.io/interpretable-ml-book/interaction.html)|[Korean](https://tootouch.github.io/IML/feature_interaction/)]
-- Permutation Feature Importance [[English](https://christophm.github.io/interpretable-ml-book/feature-importance.html)|[Korean](https://tootouch.github.io/IML/permutation_feature_importance/)]
-- Global Surrogate [[English](https://christophm.github.io/interpretable-ml-book/global.html)|[Korean](https://tootouch.github.io/IML/global_surrogate/)]
-- Local Surrogate (LIME) [[English](https://christophm.github.io/interpretable-ml-book/lime.html)|[Korean](https://tootouch.github.io/IML/local_surrogate/)]
-- Scoped Rules (Anchors) [[English](https://christophm.github.io/interpretable-ml-book/anchors.html)|[Korean](https://tootouch.github.io/IML/scoped_rules/)]
-- Shapley Values [[English](https://christophm.github.io/interpretable-ml-book/shapley.html)|[Korean](https://tootouch.github.io/IML/shapley_values/)]
-- SHAP (SHapley Additive exPlanations) [[English](https://christophm.github.io/interpretable-ml-book/shap.html)|[Korean](https://tootouch.github.io/IML/shap/)]
+**Model-agnostic methods** [ [English](https://christophm.github.io/interpretable-ml-book/agnostic.html) | [Korean](https://tootouch.github.io/IML/model_agnostic_methods/) ]
+- Partial Dependence Plot (PDP) [ [English](https://christophm.github.io/interpretable-ml-book/pdp.html) | [Korean](https://tootouch.github.io/IML/partial_dependence_plot/) ]
+- Individual Conditional Expectation (ICE) [ [English](https://christophm.github.io/interpretable-ml-book/ice.html) | [Korean](https://tootouch.github.io/IML/individual_conditional_expectation/) ]
+- Accumulated Local Effects (ALE) Plot [ [English](https://christophm.github.io/interpretable-ml-book/ale.html) | [Korean](https://tootouch.github.io/IML/accumulated_local_effects/) ] 
+- Feature Interaction [ [English](https://christophm.github.io/interpretable-ml-book/interaction.html) | [Korean](https://tootouch.github.io/IML/feature_interaction/) ]
+- Permutation Feature Importance [ [English](https://christophm.github.io/interpretable-ml-book/feature-importance.html) | [Korean](https://tootouch.github.io/IML/permutation_feature_importance/) ]
+- Global Surrogate [ [English](https://christophm.github.io/interpretable-ml-book/global.html) | [Korean](https://tootouch.github.io/IML/global_surrogate/) ]
+- Local Surrogate (LIME) [ [English](https://christophm.github.io/interpretable-ml-book/lime.html) | [Korean](https://tootouch.github.io/IML/local_surrogate/) ]
+- Scoped Rules (Anchors) [ [English](https://christophm.github.io/interpretable-ml-book/anchors.html) | [Korean](https://tootouch.github.io/IML/scoped_rules/) ]
+- Shapley Values [ [English](https://christophm.github.io/interpretable-ml-book/shapley.html) | [Korean](https://tootouch.github.io/IML/shapley_values/) ]
+- SHAP (SHapley Additive exPlanations) [ [English](https://christophm.github.io/interpretable-ml-book/shap.html) | [Korean](https://tootouch.github.io/IML/shap/) ]
   
 
 # Python Implementation
