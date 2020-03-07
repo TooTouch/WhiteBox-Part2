@@ -4,7 +4,7 @@
 
 The White Box Project is a project that introduces many ways to solve the part of the black box of machine learning. This project is based on [Interpretable Machine Learning](https://christophm.github.io/interpretable-ml-book/) by Christoph Molnar [1]. I recommend you to read the book first and practice this project. If you are R user, you can see R code used in examples [here](https://github.com/christophM/interpretable-ml-book). 
 
-한글로 변역된 내용은 [여기](https://tootouch.github.io/IML/start/)서 확인하실 수 있습니다. 변역은 저자와 협의 후 진행되었음을 알립니다.
+한글로 번역된 내용은 [여기](https://tootouch.github.io/IML/start/)서 확인하실 수 있습니다. 번역은 저자와 협의 후 진행되었음을 알립니다.
 
 만약 번역본에 잘못된 해석이 있다면 wogur379@gmail.com 또는 issue에 남겨주세요. 감사합니다.
 
