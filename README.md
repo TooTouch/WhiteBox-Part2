@@ -37,26 +37,26 @@ The parameters used to learn the model can be found [here](https://github.com/bl
 
 # Interpretable Methods
 
-**Model-specific methods** [ [English](https://christophm.github.io/interpretable-ml-book/simple.html) | [Korean](https://tootouch.github.io/IML/interpretable_models/) ]
-- Linear Regression [ [English](https://christophm.github.io/interpretable-ml-book/limo.html) | [Korean](https://tootouch.github.io/IML/linear_regression/) ]
-- Logistic Regression [ [English](https://christophm.github.io/interpretable-ml-book/logistic.html) | [Korean](https://tootouch.github.io/IML/logistic_regression/) ]
-- GLM, GAM and more [ [English](https://christophm.github.io/interpretable-ml-book/extend-lm.html) | [Korean](https://tootouch.github.io/IML/glm_gam_and_more/) ]
-- Decision Tree [ [English](https://christophm.github.io/interpretable-ml-book/tree.html) | [Korean](https://tootouch.github.io/IML/decision_tree/) ]
-- Decision Rules [ [English](https://christophm.github.io/interpretable-ml-book/rules.html) | [Korean](https://tootouch.github.io/IML/decision_rules/) ]
-- RuleFit [ [English](https://christophm.github.io/interpretable-ml-book/rulefit.html) | [Korean](https://tootouch.github.io/IML/rulefit/) ]
-- Other Interpretable Models [ [English](https://christophm.github.io/interpretable-ml-book/other-interpretable.html) | [Korean](https://tootouch.github.io/IML/other_interpretable_models/) ]
+**Model-specific methods** [ [English](https://christophm.github.io/interpretable-ml-book/simple.html) , [Korean](https://tootouch.github.io/IML/interpretable_models/) ]
+- Linear Regression [ [English](https://christophm.github.io/interpretable-ml-book/limo.html) , [Korean](https://tootouch.github.io/IML/linear_regression/) ]
+- Logistic Regression [ [English](https://christophm.github.io/interpretable-ml-book/logistic.html) , [Korean](https://tootouch.github.io/IML/logistic_regression/) ]
+- GLM, GAM and more [ [English](https://christophm.github.io/interpretable-ml-book/extend-lm.html) , [Korean](https://tootouch.github.io/IML/glm_gam_and_more/) ]
+- Decision Tree [ [English](https://christophm.github.io/interpretable-ml-book/tree.html) , [Korean](https://tootouch.github.io/IML/decision_tree/) ]
+- Decision Rules [ [English](https://christophm.github.io/interpretable-ml-book/rules.html) , [Korean](https://tootouch.github.io/IML/decision_rules/) ]
+- RuleFit [ [English](https://christophm.github.io/interpretable-ml-book/rulefit.html) , [Korean](https://tootouch.github.io/IML/rulefit/) ]
+- Other Interpretable Models [ [English](https://christophm.github.io/interpretable-ml-book/other-interpretable.html) , [Korean](https://tootouch.github.io/IML/other_interpretable_models/) ]
 
-**Model-agnostic methods** [ [English](https://christophm.github.io/interpretable-ml-book/agnostic.html) | [Korean](https://tootouch.github.io/IML/model_agnostic_methods/) ]
-- Partial Dependence Plot (PDP) [ [English](https://christophm.github.io/interpretable-ml-book/pdp.html) | [Korean](https://tootouch.github.io/IML/partial_dependence_plot/) ]
-- Individual Conditional Expectation (ICE) [ [English](https://christophm.github.io/interpretable-ml-book/ice.html) | [Korean](https://tootouch.github.io/IML/individual_conditional_expectation/) ]
-- Accumulated Local Effects (ALE) Plot [ [English](https://christophm.github.io/interpretable-ml-book/ale.html) | [Korean](https://tootouch.github.io/IML/accumulated_local_effects/) ] 
-- Feature Interaction [ [English](https://christophm.github.io/interpretable-ml-book/interaction.html) | [Korean](https://tootouch.github.io/IML/feature_interaction/) ]
-- Permutation Feature Importance [ [English](https://christophm.github.io/interpretable-ml-book/feature-importance.html) | [Korean](https://tootouch.github.io/IML/permutation_feature_importance/) ]
-- Global Surrogate [ [English](https://christophm.github.io/interpretable-ml-book/global.html) | [Korean](https://tootouch.github.io/IML/global_surrogate/) ]
-- Local Surrogate (LIME) [ [English](https://christophm.github.io/interpretable-ml-book/lime.html) | [Korean](https://tootouch.github.io/IML/local_surrogate/) ]
-- Scoped Rules (Anchors) [ [English](https://christophm.github.io/interpretable-ml-book/anchors.html) | [Korean](https://tootouch.github.io/IML/scoped_rules/) ]
-- Shapley Values [ [English](https://christophm.github.io/interpretable-ml-book/shapley.html) | [Korean](https://tootouch.github.io/IML/shapley_values/) ]
-- SHAP (SHapley Additive exPlanations) [ [English](https://christophm.github.io/interpretable-ml-book/shap.html) | [Korean](https://tootouch.github.io/IML/shap/) ]
+**Model-agnostic methods** [ [English](https://christophm.github.io/interpretable-ml-book/agnostic.html) , [Korean](https://tootouch.github.io/IML/model_agnostic_methods/) ]
+- Partial Dependence Plot (PDP) [ [English](https://christophm.github.io/interpretable-ml-book/pdp.html) , [Korean](https://tootouch.github.io/IML/partial_dependence_plot/) ]
+- Individual Conditional Expectation (ICE) [ [English](https://christophm.github.io/interpretable-ml-book/ice.html) , [Korean](https://tootouch.github.io/IML/individual_conditional_expectation/) ]
+- Accumulated Local Effects (ALE) Plot [ [English](https://christophm.github.io/interpretable-ml-book/ale.html) , [Korean](https://tootouch.github.io/IML/accumulated_local_effects/) ] 
+- Feature Interaction [ [English](https://christophm.github.io/interpretable-ml-book/interaction.html) , [Korean](https://tootouch.github.io/IML/feature_interaction/) ]
+- Permutation Feature Importance [ [English](https://christophm.github.io/interpretable-ml-book/feature-importance.html) , [Korean](https://tootouch.github.io/IML/permutation_feature_importance/) ]
+- Global Surrogate [ [English](https://christophm.github.io/interpretable-ml-book/global.html) , [Korean](https://tootouch.github.io/IML/global_surrogate/) ]
+- Local Surrogate (LIME) [ [English](https://christophm.github.io/interpretable-ml-book/lime.html) , [Korean](https://tootouch.github.io/IML/local_surrogate/) ]
+- Scoped Rules (Anchors) [ [English](https://christophm.github.io/interpretable-ml-book/anchors.html) , [Korean](https://tootouch.github.io/IML/scoped_rules/) ]
+- Shapley Values [ [English](https://christophm.github.io/interpretable-ml-book/shapley.html) , [Korean](https://tootouch.github.io/IML/shapley_values/) ]
+- SHAP (SHapley Additive exPlanations) [ [English](https://christophm.github.io/interpretable-ml-book/shap.html) , [Korean](https://tootouch.github.io/IML/shap/) ]
   
 
 # Python Implementation
@@ -87,7 +87,7 @@ Feature Importance | [`skater`](#skater)
 Local Surrogate | [`skater`](#skater) [`lime`](#lime)
 Global Surrogate | [`skater`](#skater)
 Scoped Rules (Anchors) | [`alibi`](#alibi)
-SHapley Additive exPlanation (SHAP) | [`shap`](#alibi)
+SHapley Additive exPlanation (SHAP) | [`shap`](#shap)
 
 **Example-Based Explanations**
 
@@ -95,8 +95,8 @@ Name | Packages
 ---|---
 Contrastive Explanations Method (CEM) | [`alibi`](#alibi)
 Counterfactual Instances | [`alibi`](#alibi)
-Prototype Counterfactuals | [`alibi`](#alibi)
-Influence Instances | [`influence-release`](#alibi)
+Prototype Counterfactuals | [`MMD-critic`](#MMD-critic)
+Influence Instances | [`influence-release`](#influence-release)
 
 
 ## Install packages
@@ -111,8 +111,8 @@ It is currently maintained by a team of volunteers.
 
 Scikit-learn is available in through conda provided by Anaconda.
 
-- **Documentation** : https://scikit-learn.org/stable/  
-- **Github Repository** : https://github.com/scikit-learn/scikit-learn
+- **Documentation** : [https://scikit-learn.org/stable/  ](https://scikit-learn.org/stable/  )
+- **Github Repository** : [https://github.com/scikit-learn/scikit-learn](https://github.com/scikit-learn/scikit-learn)
 
 **Installation** 
 
@@ -133,8 +133,8 @@ statsmodels is a Python module that provides classes and functions for the estim
 
 Statsmodels is available in through conda provided by Anaconda.
 
-- **Documentation** : https://www.statsmodels.org/stable/index.html  
-- **Github Repository** : https://github.com/statsmodels/statsmodels
+- **Documentation** : [https://www.statsmodels.org/stable/index.html  ](https://www.statsmodels.org/stable/index.html  )
+- **Github Repository** : [https://github.com/statsmodels/statsmodels](https://github.com/statsmodels/statsmodels)
 
 **Installation**  
 
@@ -153,8 +153,8 @@ import statsmodels
 
 pyGAM is a package for building Generalized Additive Models in Python, with an emphasis on modularity and performance. The API will be immediately familiar to anyone with experience of scikit-learn or scipy.
 
-- **Documentation** : https://pygam.readthedocs.io/en/latest/notebooks/quick_start.html  
-- **Github Repository** : https://github.com/dswah/pyGAM
+- **Documentation** : [https://pygam.readthedocs.io/en/latest/notebooks/quick_start.html  ](https://pygam.readthedocs.io/en/latest/notebooks/quick_start.html  )
+- **Github Repository** : [https://github.com/dswah/pyGAM](https://github.com/dswah/pyGAM)
 
 **Installation**  
 
@@ -173,8 +173,8 @@ import pygam
 
 Skater is a open source unified framework to enable Model Interpretation for all forms of model to help one build an Interpretable machine learning system often needed for real world use-cases. Skater supports algorithms to demystify the learned structures of a black box model both globally(inference on the basis of a complete data set) and locally(inference about an individual prediction).
 
-- **Documentation** : https://oracle.github.io/Skater/index.html  
-- **Github Repository** : https://github.com/oracle/Skater
+- **Documentation** : [https://oracle.github.io/Skater/index.html  ](https://oracle.github.io/Skater/index.html  )
+- **Github Repository** : [https://github.com/oracle/Skater](https://github.com/oracle/Skater)
 
 **Installation** 
 
@@ -208,8 +208,8 @@ python partial dependence plot toolbox
 
 This repository is inspired by ICEbox. The goal is to visualize the impact of certain features towards model prediction for any supervised learning algorithm using partial dependence plots [R1](https://pdpbox.readthedocs.io/en/latest/papers.html#r1) [R2](https://pdpbox.readthedocs.io/en/latest/papers.html#r2). PDPbox now supports all scikit-learn algorithms.
 
-- **Documentation** : https://pdpbox.readthedocs.io/en/latest/index.html#
-- **Github Repository** : https://github.com/SauceCat/PDPbox
+- **Documentation** : [https://pdpbox.readthedocs.io/en/latest/index.html#](https://pdpbox.readthedocs.io/en/latest/index.html#)
+- **Github Repository** : [https://github.com/SauceCat/PDPbox](https://github.com/SauceCat/PDPbox)
 
 **Installation**  
 
@@ -227,8 +227,8 @@ import pdpbox
 
 This project is about explaining what machine learning classifiers (or models) are doing. At the moment, we support explaining individual predictions for text classifiers or classifiers that act on tables (numpy arrays of numerical or categorical data) or images, with a package called lime (short for local interpretable model-agnostic explanations). Lime is based on the work presented in [this paper](https://arxiv.org/abs/1602.04938) ([bibtex here for citation](https://github.com/marcotcr/lime/blob/master/citation.bib)).
 
-- **Documentation** : https://lime-ml.readthedocs.io/en/latest/index.html
-- **Github Repository** : https://github.com/marcotcr/lime
+- **Documentation** : [https://lime-ml.readthedocs.io/en/latest/index.html](https://lime-ml.readthedocs.io/en/latest/index.html)
+- **Github Repository** : [https://github.com/marcotcr/lime](https://github.com/marcotcr/lime)
 
 **Installation**  
 
@@ -246,8 +246,8 @@ import lime
 
 A Python implementation of individual conditional expecation plots inspired by R's [ICEbox](https://cran.r-project.org/web/packages/ICEbox/index.html). Individual conditional expectation plots were introduced in Peeking Inside the Black Box: Visualizing Statistical Learning with Plots of Individual Conditional Expectation ([arXiv:1309.6392](https://arxiv.org/abs/1309.6392)).
 
-- **Documentation** : http://austinrochford.github.io/PyCEbox/docs/
-- **Github Repository** : https://github.com/AustinRochford/PyCEbox
+- **Documentation** : [http://austinrochford.github.io/PyCEbox/docs/](http://austinrochford.github.io/PyCEbox/docs/)
+- **Github Repository** : [https://github.com/AustinRochford/PyCEbox](https://github.com/AustinRochford/PyCEbox)
 
 **Installation** 
 
@@ -264,7 +264,7 @@ import pycebox
 
 Implementation of a rule based prediction algorithm based on [the rulefit algorithm from Friedman and Popescu (PDF)(http://statweb.stanford.edu/~jhf/ftp/RuleFit.pdf)]
 
-- **Github Repository** : https://github.com/christophM/rulefit
+- **Github Repository** : [https://github.com/christophM/rulefit](https://github.com/christophM/rulefit)
 
 **Installation** 
 
@@ -285,8 +285,8 @@ Skope-rules aims at learning logical, interpretable rules for "scoping" a target
 
 Skope-rules is a trade off between the interpretability of a Decision Tree and the modelization power of a Random Forest.
 
-- **Documentation** : https://skope-rules.readthedocs.io/en/latest/index.html
-- **Github Repository** : https://github.com/scikit-learn-contrib/skope-rules
+- **Documentation** : [https://skope-rules.readthedocs.io/en/latest/index.html](https://skope-rules.readthedocs.io/en/latest/index.html)
+- **Github Repository** : [https://github.com/scikit-learn-contrib/skope-rules](https://github.com/scikit-learn-contrib/skope-rules)
 
 **Installation**  
 
@@ -304,8 +304,8 @@ import skrules
 Alibi is an open source Python library aimed at machine learning model inspection and interpretation. The initial focus on the library is on black-box, instance based model explanations.
 
 
-- **Documentation** : https://docs.seldon.io/projects/alibi/en/latest/#
-- **Github Repository** : https://github.com/SeldonIO/alibi
+- **Documentation** : [https://docs.seldon.io/projects/alibi/en/latest/#](https://docs.seldon.io/projects/alibi/en/latest/#)
+- **Github Repository** : [https://github.com/SeldonIO/alibi](https://github.com/SeldonIO/alibi)
 
 **Installation** 
 
@@ -330,7 +330,7 @@ We have a reproducible, executable, and Dockerized version of these scripts on [
 
 The datasets for the experiments can also be found at the Codalab link.
 
-- **Github Repository** : https://github.com/kohpangwei/influence-release
+- **Github Repository** : [https://github.com/kohpangwei/influence-release](https://github.com/kohpangwei/influence-release)
 
 
 ### shap
@@ -338,8 +338,8 @@ The datasets for the experiments can also be found at the Codalab link.
 SHAP (SHapley Additive exPlanations) is a game theoretic approach to explain the output of any machine learning model. It connects optimal credit allocation with local explanations using the classic Shapley values from game theory and their related extensions (see [papers](https://github.com/slundberg/shap#citations) for details and citations).
 
 
-- **Documentation** : https://shap.readthedocs.io/en/latest/#
-- **Github Repository** : https://github.com/slundberg/shap
+- **Documentation** : [https://shap.readthedocs.io/en/latest/#](https://shap.readthedocs.io/en/latest/#)
+- **Github Repository** : [https://github.com/slundberg/shap](https://github.com/slundberg/shap)
 
 **Installation** 
 
@@ -353,6 +353,24 @@ conda install -c conda-forge shap
 ```python
 import shap
 ```
+
+### MMD-critic
+
+This method is proposed in [this papaer](http://people.csail.mit.edu/beenkim/papers/KIM2016NIPS_MMD.pdf). 
+
+**Abstract**  
+Example-based explanations are widely used in the effort to improve the interpretability of highly complex distributions. However, prototypes alone are rarely
+sufficient to represent the gist of the complexity. In order for users to construct
+better mental models and understand complex data distributions, we also need
+criticism to explain what are not captured by prototypes. Motivated by the Bayesian
+model criticism framework, we develop MMD-critic which efficiently learns prototypes and criticism, designed to aid human interpretability. A human subject pilot
+study shows that the MMD-critic selects prototypes and criticism that are useful
+to facilitate human understanding and reasoning. We also evaluate the prototypes
+selected by MMD-critic via a nearest prototype classifier, showing competitive
+performance compared to baselines.
+
+- **Github Repository** : [https://github.com/BeenKim/MMD-critic](https://github.com/BeenKim/MMD-critic)
+
 
 # Reference
 [1] Molnar, Christoph. "Interpretable machine learning. A Guide for Making Black Box Models Explainable", 2019. https://christophm.github.io/interpretable-ml-book/.
@@ -368,4 +386,3 @@ import shap
 [6] Alberto, T.C., Lochter J.V., Almeida, T.A. TubeSpam: Comment Spam Filtering on YouTube. Proceedings of the 14th IEEE International Conference on Machine Learning and Applications (ICMLA'15), 1-6, Miami, FL, USA, December, 2015. [[Link]](http://www.dt.fee.unicamp.br/~tiago//youtubespamcollection/)
 
 [7] Lundberg, Scott M., and Su-In Lee. “[A unified approach to interpreting model predictions.](https://arxiv.org/pdf/1705.07874.pdf)” Advances in Neural Information Processing Systems. 2017. ([Korean Version](https://www.notion.so/tootouch/A-Unified-Approach-to-Interpreting-Model-Predictions-96de8a9e08b149c48cdd802cd62ad59f))
-
